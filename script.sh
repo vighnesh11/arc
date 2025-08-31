@@ -1,6 +1,6 @@
 # Add the service principal application ID and secret here
 ServicePrincipalId="1c1f52eb-af29-4fff-a3f0-8259f0d347d4";
-ServicePrincipalClientSecret="QeY8Q~juqsf1EUysNCupQo9IsPrI.qicFQaM4cDQ";
+ServicePrincipalClientSecret="cKY8Q~DFEqJBgN2C-~BKKBZZwPw_izdJbe_v~b5n";
 
 
 export subscriptionId="8b0fbf42-b133-4d15-a317-1c7456bfd750";
@@ -18,3 +18,4 @@ echo "$output";
 bash "$LINUX_INSTALL_SCRIPT";
 sleep 5;
 sudo azcmagent connect --service-principal-id "$ServicePrincipalId" --service-principal-secret "$ServicePrincipalClientSecret" --resource-group "$resourceGroup" --tenant-id "$tenantId" --location "$location" --subscription-id "$subscriptionId" --cloud "$cloud" --tags 'ArcSQLServerExtensionDeployment=Disabled' --correlation-id "$correlationId";
+
